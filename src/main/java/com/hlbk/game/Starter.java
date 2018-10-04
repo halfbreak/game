@@ -1,5 +1,6 @@
 package com.hlbk.game;
 
+import com.hlbk.game.character.CharacterCodec;
 import com.hlbk.game.character.CharacterContainer;
 import com.hlbk.game.options.OptionChoicesPrinter;
 import com.hlbk.game.options.OptionExecutor;
@@ -29,7 +30,7 @@ public class Starter {
 
         Exploring exploring = initExploring(characterContainer, chapterPrinter, requirementValidator);
         Fighting fighting = new Fighting(randomMonsterFactory, characterContainer);
-        OptionsFactory optionsFactory = new OptionsFactory(exploring, characterContainer, fighting);
+        OptionsFactory optionsFactory = new OptionsFactory(exploring, characterContainer, fighting, new CharacterCodec());
         OptionExecutor optionExecutor = new OptionExecutor(optionsTextPrinter,
                 new BlueChoicePrinter<>(optionChoicesPrinter));
 
