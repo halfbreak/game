@@ -54,6 +54,7 @@ public class Starter {
         exploring.register(new Chapter2());
         exploring.register(new Chapter3());
         exploring.register(new Chapter4());
+        exploring.register(new Chapter5());
         return exploring;
     }
 
