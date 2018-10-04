@@ -1,16 +1,17 @@
-package com.hlbk.game.options;
+package com.hlbk.game.options.game;
 
-import com.hlbk.game.story.Exploration;
+import com.hlbk.game.options.Option;
+import com.hlbk.game.story.Exploring;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ExploreOption implements Option {
 
-    private final Exploration exploration;
+    private final Exploring exploring;
 
-    public ExploreOption(Exploration exploration) {
-        this.exploration = exploration;
+    public ExploreOption(Exploring exploring) {
+        this.exploring = exploring;
     }
 
     @Override
@@ -25,6 +26,6 @@ public class ExploreOption implements Option {
 
     @Override
     public void call() {
-        exploration.execute();
+        exploring.execute();
     }
 }

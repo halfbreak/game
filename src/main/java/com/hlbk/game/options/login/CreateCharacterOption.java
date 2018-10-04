@@ -1,7 +1,8 @@
-package com.hlbk.game.options;
+package com.hlbk.game.options.login;
 
 import com.hlbk.game.character.Character;
 import com.hlbk.game.character.CharacterContainer;
+import com.hlbk.game.options.Option;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,6 @@
-package com.hlbk.game.options;
+package com.hlbk.game.options.general;
+
+import com.hlbk.game.options.Option;
 
 import java.util.ArrayList;
 import java.util.List;

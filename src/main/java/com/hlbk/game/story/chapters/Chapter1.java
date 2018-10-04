@@ -13,7 +13,7 @@ public class Chapter1 implements Chapter {
         chapters.add("You get to a forest.");
         chapters.add("Behind you there are steps.");
         chapters.add("Loud steps.");
-        chapters.add("Who are they?");
+        chapters.add("Who are they from?");
         return chapters;
     }
 }
