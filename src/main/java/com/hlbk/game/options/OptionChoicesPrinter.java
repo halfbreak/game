@@ -12,5 +12,7 @@ public class OptionChoicesPrinter implements ChoicePrinter<Option> {
         for (int i = 0; i < options.size(); i++) {
             System.out.println((i + 1) + " " + options.get(i).choice());
         }
+        System.out.println();
+        System.out.println();
     }
 }

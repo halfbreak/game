@@ -21,8 +21,6 @@ public class Experience {
 
     @Override
     public String toString() {
-        return "Experience{" +
-                "experience=" + experience +
-                '}';
+        return "{" + experience + '}';
     }
 }

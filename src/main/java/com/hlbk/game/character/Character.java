@@ -4,7 +4,6 @@ import com.hlbk.game.world.items.Fists;
 import com.hlbk.game.world.items.Weapon;
 
 public class Character {
-    //TODO character should follow the state pattern and have things in (CharacterState)?
 
     private final String characterName;
     private final Experience experience;

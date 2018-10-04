@@ -31,6 +31,7 @@ public class CreateCharacterOption implements Option {
     @Override
     public void call() {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("> ");
         String characterName = scanner.next();
         characterContainer.update(new Character(characterName));
     }

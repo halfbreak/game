@@ -19,6 +19,15 @@ dependencies {
     testImplementation 'com.github.stefanbirkner:system-rules:1.18.0'
 }
 
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'com.hlbk.game.Starter'
+        )
+    }
+}
+
 allprojects {
     apply plugin: 'idea'
     idea {

@@ -19,6 +19,7 @@ public class OptionExecutor {
     public void execute(List<Option> options) {
         Scanner scanner = new Scanner(System.in);
         optionChoicesPrinter.print(options);
+        System.out.print("> ");
         int choice = scanner.nextInt();
         optionsPrinter.present(options, choice);
         options.get(choice - 1).call();
